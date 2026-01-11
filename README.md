@@ -36,3 +36,6 @@ This project moves away from traditional circuit-DSL (Circom/Halo2) to a **Rust-
 * *SP1 Documentation*
 * *Ethereum Protocol Fellowship Wiki (Execution Layer Specs)*
 * *Plonky3 Repository*
+
+---
+*Independent research project by hs1167, math student at Sorbonne University.*
