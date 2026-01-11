@@ -38,4 +38,4 @@ This project moves away from traditional circuit-DSL (Circom/Halo2) to a **Rust-
 * *Plonky3 Repository*
 
 ---
-*Independent research project by hs1167, math student at Sorbonne University.*
+*Independent research project by hs1167(https://github.com/hs1167), math student at Sorbonne University.*
