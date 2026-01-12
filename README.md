@@ -1,6 +1,6 @@
 # SP1 Privacy Mixer 🌪️
 
-> **Status:** 🚧 Under Development (Week 0/8)
+> **Status:** 🚧 Under Development (Week 1/8)
 > **Goal:** POC of a non-custodial mixer leveraging zkVM (SP1) for off-chain computation and Groth16 for on-chain verification.
 
 ## 📐 Architecture
