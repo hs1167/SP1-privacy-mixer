@@ -1,6 +1,6 @@
 # SP1 Privacy Mixer 🌪️
 
-> **Status:** 🚧 Under Development (Week 1/8)
+> **Status:** 🚧 Under Development (Week 1/10)
 > **Goal:** POC of a non-custodial mixer leveraging zkVM (SP1) for off-chain computation and Groth16 for on-chain verification.
 
 ## 📐 Architecture
@@ -67,7 +67,7 @@ On-Chain Integration (Week 9)
 
 [ ] Optimization: Gas cost analysis & EIP-4844 Blob integration study for data availability.
 
-Frontend & Release (Weeks 10)
+Frontend & Release (Week 10)
 
 [ ] CLI Integration: Building the user interface for note generation and proof submission.
 
@@ -80,4 +80,4 @@ Frontend & Release (Weeks 10)
 * *Plonky3 Repository*
 
 ---
-*Independent research project by hs1167(https://github.com/hs1167), math student at Sorbonne University.*
+*Independent research project by [hs1167](https://github.com/hs1167), math student at Sorbonne University.*
