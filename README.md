@@ -22,14 +22,56 @@ This project moves away from traditional circuit-DSL (Circom/Halo2) to a **Rust-
 * **Hashing Strategy:** Comparative analysis of **Poseidon2** vs **Monolith**.
     * *Goal:* Benchmark cycle counts within SP1 (RISC-V) to determine the most efficient primitive for Merkle Tree operations over the Goldilocks field vs standard Keccak256 costs.
 
-## 🗺️ Roadmap (8-Week Sprint)
+🗺️ Project Roadmap (10-Week Sprint)
+This roadmap follows a strict linear progression: mastering the language first, then building the cryptographic primitives, and finally integrating the ZK logic.
 
-- [ ] **Week 1-2:** Core Primitives (Poseidon2/Monolith benchmarking, Sparse Merkle Tree implementation in Rust).
-- [ ] **Week 3-4:** Mixer Logic (Deposit/Withdraw circuits in SP1, Nullifier constraints).
-- [ ] **Week 5:** Recursive Proving (STARK -> SNARK wrapping).
-- [ ] **Week 6:** Solidity Verifier, Gas Optimization & EIP-4844 Blob integration study.
-- [ ] **Week 7:** Frontend & CLI Integration.
-- [ ] **Week 8:** Mainnet/Testnet Deployment & Technical Deep-Dive Write-up.
+🏗️ Phase 1: The Foundation (Weeks 1-3)
+🎯 Current Status: 🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜ 20%
+
+Context: Before tackling the ZK-specific architecture, I am executing a high-intensity "Rust for Cryptography" sprint. I am strictly focusing on low-level safety to ensure production-grade hygiene.
+
+Immediate Objectives:
+
+[x] Ownership Semantics: Mastering move semantics to prevent secret leakage in memory.
+
+[ ] Trait Bounds & Generics: Essential for writing abstract, reusable ZK circuits.
+
+[ ] Custom Error Handling: Building robust Result types for cryptographic failures.
+
+[ ] Core Implementation: Implementing Hash wrappers & Merkle structures from scratch in native Rust.
+
+🚀 Phase 2: The SP1 Build (Weeks 4-10)
+Transitioning from native Rust to the SP1 zkVM environment.
+
+Core Engineering (Weeks 4-5)
+
+[ ] Benchmarking: Compare Poseidon2 vs Monolith performance inside the SP1 zkVM.
+
+[ ] Data Structures: Implementation of a Sparse Merkle Tree (SMT) optimized for the Goldilocks field.
+
+Mixer Logic & Constraints (Weeks 6-7)
+
+[ ] Deposit Circuit: Note commitment generation logic.
+
+[ ] Withdraw Circuit: SP1 program for Merkle inclusion proofs.
+
+[ ] Constraint Security: Implementing Nullifier logic to strictly prevent double-spending.
+
+Proving Architecture (Week 8)
+
+[ ] Recursion: Implement the STARK -> SNARK wrapper (Groth16) for on-chain verification efficiency.
+
+On-Chain Integration (Week 9)
+
+[ ] Solidity Verifier: Deploying the auto-generated Groth16 verifier contract.
+
+[ ] Optimization: Gas cost analysis & EIP-4844 Blob integration study for data availability.
+
+Frontend & Release (Weeks 10)
+
+[ ] CLI Integration: Building the user interface for note generation and proof submission.
+
+[ ] Deployment: Mainnet/Testnet launch & Technical Deep-Dive write-up.
 
 ## 📚 References
 * *Tornado Cash Whitepaper*
