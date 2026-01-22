@@ -1,6 +1,6 @@
 # SP1 Privacy Mixer 🌪️
 
-> **Status:** 🚧 Under Development (Week 1/10)
+> **Status:** 🚧 Under Development (Week 2/10)
 > **Goal:** POC of a non-custodial mixer leveraging zkVM (SP1) for off-chain computation and Groth16 for on-chain verification.
 
 ## 📐 Architecture
@@ -25,8 +25,8 @@ This project moves away from traditional circuit-DSL (Circom/Halo2) to a **Rust-
 🗺️ Project Roadmap (10-Week Sprint)
 This roadmap follows a strict linear progression: mastering the language first, then building the cryptographic primitives, and finally integrating the ZK logic.
 
-🏗️ Phase 1: The Foundation (Weeks 1-3)
-🎯 Current Status: 🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜ 20%
+🏗️ Phase 1: The Foundation (Weeks 2-3)
+🎯 Current Status: 🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜ 40%
 
 Context: Before tackling the ZK-specific architecture, I am executing a high-intensity "Rust for Cryptography" sprint. I am strictly focusing on low-level safety to ensure production-grade hygiene.
 
@@ -34,11 +34,12 @@ Immediate Objectives:
 
 [x] Ownership Semantics: Mastering move semantics to prevent secret leakage in memory.
 
+[x] Core Implementation: Implementing Hash wrappers & Merkle structures from scratch in native Rust.
+
+[wip] Custom Error Handling: Building robust Result types for cryptographic failures.
+
 [ ] Trait Bounds & Generics: Essential for writing abstract, reusable ZK circuits.
 
-[ ] Custom Error Handling: Building robust Result types for cryptographic failures.
-
-[ ] Core Implementation: Implementing Hash wrappers & Merkle structures from scratch in native Rust.
 
 🚀 Phase 2: The SP1 Build (Weeks 4-10)
 Transitioning from native Rust to the SP1 zkVM environment.
